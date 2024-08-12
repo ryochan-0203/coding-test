@@ -4,7 +4,8 @@ declare(strict_types=1);
 require_once __DIR__ . '/vendor/autoload.php';
 
 // エラーハンドリングを関数にまとめる
-function handleError($message) {
+function handleError($message) 
+{
     echo "エラー: $message\n";
     exit(1);
 }
@@ -39,7 +40,7 @@ if (!$apiKey) {
 
 // 引数の検証
 if ($argc !== 2) {
-    handleError("使用方法: php search.php <検索キーワード>");
+    handleError("使用方法: php youtube_search.php <検索キーワード>");
 }
 
 $searchKeyword = $argv[1];
