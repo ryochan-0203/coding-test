@@ -40,7 +40,7 @@ if (!$apiKey) {
 
 // 引数の検証
 if ($argc !== 2) {
-    handleError("使用方法: php youtube_search.php <検索キーワード>");
+    handleError("引数を適切に指定してください。");
 }
 
 $searchKeyword = $argv[1];
