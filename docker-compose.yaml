@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    command: php /app/youtube_search.php your_search_term
+    env_file:
+      - .env
